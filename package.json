@@ -1,0 +1,15 @@
+{
+  "name": "real-estate-app",
+  "version": "1.0.0",
+  "description": "Full-stack Real Estate Property Listing Application",
+  "scripts": {
+    "dev": "concurrently --kill-others --names \"SERVER,CLIENT\" --prefix-colors \"cyan,magenta\" \"node start-server.js\" \"node start-client.js\"",
+    "dev:server": "node start-server.js",
+    "dev:client": "node start-client.js",
+    "seed": "node start-server.js seed",
+    "install:all": "npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
